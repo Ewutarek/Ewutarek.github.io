@@ -39,7 +39,7 @@ function LSystem() {
     this.ruleZ = "--YF++++WF[+ZF++++XF]-----XF";
 
     //These two lines determine the overall general shape because of the angles that each line will be set and the length;
-    this.startLength = 600.0;
+    this.startLength = 900.0;
     this.theta =  TWO_PI/ 2.5; 
     this.reset();
 }
