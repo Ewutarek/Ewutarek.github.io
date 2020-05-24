@@ -23,6 +23,7 @@ function setup() {
   systemVectorCapsule = new LSystem();
   //please, play around with the following line
   systemVectorCapsule.simulate(5);
+    // frameRate(10);
 }
 
 function draw() {
@@ -131,6 +132,14 @@ LSystem.prototype.render = function () {
         pop();
       }
     }
+  }
+
+  function keyPressed() {
+      if(keyCode === 82)
+       {
+           setup();
+       }
+    
   }
 
 

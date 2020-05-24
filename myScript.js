@@ -27,31 +27,29 @@ function receiveName()
 
 
 
-// function formAndEnterBtn()
-// {
-//   var y = document.getElementById("myForm");
-//   if (y.style.display === "none") {
-//     y.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-
-
-// function typeWriter() {
-
-//   var i = 0;
-//   var txt = 'Lorem ipsum typing effect!'; /* The text */
-//   var speed = 50; /* The speed/duration of the effect in milliseconds */
-//   if (i < txt.length) {
-//     document.getElementById(_txtID).innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
-
-// window.onload = typeWriter();
-
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
