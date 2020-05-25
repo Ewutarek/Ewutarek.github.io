@@ -561,7 +561,8 @@
   }
   
   .content_book-2 h1 {
-    color: #f5d76e;
+   color: #d64541;
+    text-align: center;
   }
   
   .content_book-3 .picto {
@@ -574,7 +575,8 @@
   }
   
   .content_book-3 h1 {
-    color: #00b16a;
+    color: #d64541;
+    text-align: center;
   }
   
   .content_book-4 .picto {
@@ -587,7 +589,8 @@
   }
   
   .content_book-4 h1 {
-    color: #f27935;
+    color: #d64541;
+    text-align: center;
   }
   
   .content-test h1:first-letter {
@@ -602,22 +605,22 @@
   
   input:checked ~ label.label_book-1 {
     color: #d64541;
-    border-right: solid 4px #d64541;
+ 
   }
   
   input:checked ~ label.label_book-2 {
-    color: #f5d76e;
-    border-right: solid 4px #f5d76e;
+    color: #d64541;
+ 
   }
   
   input:checked ~ label.label_book-3 {
-    color: #00b16a;
-    border-right: solid 4px #00b16a;
+    color: #d64541;
+  
   }
   
   input:checked ~ label.label_book-4 {
-    color: #f27935;
-    border-right: solid 4px #f27935;
+    color: #d64541;
+ 
   }
   
   label.label_book-1:before {
@@ -682,16 +685,7 @@
   }
   
   .label_book-1:hover {
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#ffffff),
-      to(#d64541a3)
-    );
-    background-image: -webkit-linear-gradient(left, #ffffff, #d64541a3);
-    background-image: -o-linear-gradient(left, #ffffff, #d64541a3);
-    background-image: linear-gradient(to right, #ffffff, #d64541a3);
+   
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
@@ -699,54 +693,27 @@
   }
   
   .label_book-2:hover {
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#ffffff),
-      to(#f5d76e59)
-    );
-    background-image: -webkit-linear-gradient(left, #ffffff, #f5d76e59);
-    background-image: -o-linear-gradient(left, #ffffff, #f5d76e59);
-    background-image: linear-gradient(to right, #ffffff, #f5d76e59);
+    
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
-    transition: font-size 0.5s;
+    transition: font-size 0.5s
   }
   
   .label_book-3:hover {
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#ffffff),
-      to(#00b16aa3)
-    );
-    background-image: -webkit-linear-gradient(left, #ffffff, #00b16aa3);
-    background-image: -o-linear-gradient(left, #ffffff, #00b16aa3);
-    background-image: linear-gradient(to right, #ffffff, #00b16aa3);
+    
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
-    transition: font-size 0.5s;
+    transition: font-size 0.5s
   }
   
   .label_book-4:hover {
-    background-image: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#ffffff),
-      to(#f27935a3)
-    );
-    background-image: -webkit-linear-gradient(left, #ffffff, #f27935a3);
-    background-image: -o-linear-gradient(left, #ffffff, #f27935a3);
-    background-image: linear-gradient(to right, #ffffff, #f27935a3);
+  
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
-    transition: font-size 0.5s;
+    transition: font-size 0.5s
   }
   
   p.bookState {
@@ -833,13 +800,13 @@
 
 /* Style the front side */
 .flip-box-front {
-  background-color: #494949;
+  background-color: #0000;
   color: black;
 }
 
 /* Style the back side */
 .flip-box-back {
-  background-color: dodgerblue;
+  background-color: white;
   color: white;
   transform: rotateY(180deg);
 }
