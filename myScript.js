@@ -13,8 +13,8 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-// Disable Enter Name button, retrive and print name in text
 
+// Disable Enter Name button, retrive and print name in text
 function receiveName()
 {
   //Nice to meet you [Username]! Thanks for checking out my site and getting to know me.
