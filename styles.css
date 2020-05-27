@@ -245,9 +245,6 @@
     }
     
     .carousel-container {
-      /* position: absolute; */
-      /* height: 300px;
-      width: 600px; */
       top: 60px;
       left: calc(50% - 300px);
       display: flex;
@@ -257,13 +254,13 @@
     .card {
       display: flex;
       height: 340px;
-      width: 240px;
+      width: 340px;
       background-color: #fff;
       box-shadow: -1rem 0 3rem #000;
-    /*   margin-left: -50px; */
       transition: 0.4s ease-out;
       position: relative;
       left: 0px;
+      border-radius: 50%;
     }
     
     .card:not(:first-child) {
@@ -285,7 +282,7 @@
       color: black;
       font-weight: 300;
       position: absolute;
-      left: 20px;
+      left: 100px;
       top: 15px;
     }
     
