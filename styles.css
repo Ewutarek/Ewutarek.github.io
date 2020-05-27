@@ -179,7 +179,7 @@
       color: black;
     }
     /* Full-width input fields */
-    .form-container input[type=text], .form-container input[type=password] {
+    .form-container input[type=text] {
       width: 75%;
       padding: 15px;
       margin: 5px 0 22px 0;
@@ -188,7 +188,7 @@
     }
     
     /* When the inputs get focus, do something */
-    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    .form-container input[type=text]:focus-within{
       background-color: #ddd;
       outline: none;
     }
@@ -743,40 +743,8 @@
   }
   /* ============== End Books Flexbox ============= */
   /* ---------------------------------------------------------------------------------------------------------- */
-  /* Coding container Styling */
-  .main-container {
-    display: flex;
-    width: 50%;
-    height: 75%;
-    max-height: 75%;
-    border: 1px solid red;
-}
-.left-container {
-    flex: 0 1 50%;
-    min-height: 100%;
-    max-width: 50%;
-    border: 1px solid red;
-    background: #000000;
-    padding: .5em;
-}
-.right-container {
-    flex: 0 1 50%;
-    display: flex;
-    height: 100%;
-    max-width: 50%;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-.half-containers {
-    flex: 0 0 100%;
-    max-height: 50%;
-    min-height: 50%;
-    max-width: 100%;
-    background: #000000;
-    border: 1px solid red;
-    padding: .5em;
-    overflow: hidden;
-}
+  
+  
 /* --------------------------------------------------------------------------------------------------------------- */
 
 /* Coding page Flip box Styling */
